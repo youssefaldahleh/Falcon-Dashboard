@@ -18,20 +18,20 @@ img {
     max-width: 100%;
 }
 
-svg {
-    max-width: 100%;
-}
 
 small {
     font-weight: 400;
-    font-size: 10px;
     color: #646262;
 }
 
 .contanier {
-    padding: 20px 30px;
+  
     display: grid;
-    grid-template-columns: 240px 1fr 240px;
+    grid-template-columns: 332px 1fr 320px;
+}
+.contanier-left-side{
+    padding: 20px ;
+
 }
 
 .logo p {
@@ -48,16 +48,21 @@ small {
 
 .section span {
     font-weight: 500;
-    padding-left: 30px;
+    padding-left: 36px;
 }
 
 .section-head {
     display: flex;
-    align-items: center;
     border-top: 1px solid #00000036;
     padding-top: 10px;
     position: relative;
 }
+.section-head h3{
+    font-size: 20px;
+    padding-right: 23px;
+    padding-bottom: 30px;
+}
+
 
 .section-head .Arrow {
     padding-left: 10px;
@@ -71,16 +76,19 @@ small {
 .section-footer {
     display: flex;
     align-items: center;
-    margin-top: 250px;
+    
 }
 
 .section-footer .add {
     padding-right: 20px;
 }
+.section-footer h3{
+    font-size: 20px;
+}
 
 /* end left sied */
 .center-side {
-    margin: 0 40px;
+ padding: 20px 6px;
     background-color: #00bcd41a;
 }
 
@@ -89,7 +97,10 @@ small {
     font-size: 24px;
     line-height: 36px;
     color: #4F4F4F;
-    padding: 20px 0;
+    padding: 29px 0 20px 0;
+}
+.center-side .preson{
+    overflow: auto;
 }
 
 .center-side ul {
@@ -98,26 +109,36 @@ small {
 
 .center-side li {
     padding-right: 14px;
+    flex-shrink: 0;
+}
+.center-side li p{
+    font-size: 14px;
 }
 
 .count {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
 .count-box {
     display: flex;
     align-items: center;
-    margin: 0 5px;
+
     border-radius: 16px;
-    z-index: 0;
+   
     background-color: #fff;
+}
+.count-box .count-text{
+    padding: 10px 27px 10px 18px;
+}
+.count-box .count-img{
+    display: flex;
 }
 
 .count-box p {
-    padding-right: 60px;
+  
     color: #00438B;
 }
 
@@ -128,29 +149,27 @@ span {
     line-height: 27px;
 }
 
-.count-box .count-img {
 
-    position: relative;
 
-}
-
-.count-box .shadow {
+/* .count-box .shadow {
     position: absolute;
     top: 0;
     right: 10px;
     z-index: -1;
-}
+} */
 
 .box-group {
     display: flex;
     justify-content: space-between;
 
 }
+.analytics {
+    padding-right: 47px;
+}
 
 .analytics-event {
     display: flex;
-
-    justify-content: space-evenly;
+   
 }
 
 .analytics .analytics-box-group {
@@ -204,6 +223,15 @@ span {
     border-radius: 10px;
     width: 252px;
 }
+.event-content-img{
+    padding: 26px 0 20px 0;
+}
+.event-content p{
+    font-size: 13px;
+}
+.event-content p:last-of-type{
+    margin-bottom: 16px;
+}
 
 .event-package {
     display: flex;
@@ -213,9 +241,9 @@ span {
 }
 
 .package {
-
-    text-align: start;
-    margin: 40px 20px 0 0;
+display: flex;
+align-items: center;
+    margin: 20px 20px 0 0;
 
 }
 
@@ -223,13 +251,18 @@ span {
     font-weight: 500;
     font-size: 13px;
     line-height: 19.5px;
-    display: inline-block;
+    margin-left: 20px;
 }
 
 .statistcs .target {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.statistcs h1{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
 }
 
 .target-box {
@@ -247,10 +280,16 @@ span {
 }
 
 /* end center */
+.right-side{
+    padding: 20px 0 0 20px;
+}
 .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.head-text{
+    font-size: 14px;
 }
 
 .head-icon {
@@ -261,6 +300,13 @@ span {
 .person-description {
     margin: 20px 0;
 }
+.person-description .uiux{
+    font-size: 14px;
+}
+.person-description li p{
+    font-size: 18px;
+    font-weight: 500;
+} 
 
 .person-description ul {
     display: flex;
@@ -281,6 +327,7 @@ span {
     border-radius: 10px;
     background-color: transparent;
     margin-top: 40px;
+
 }
 
 .profile-btn .active {
@@ -292,6 +339,9 @@ span {
     display: flex;
     align-items: center;
     margin-top: 40px;
+}
+.profile-add small{
+    font-size: 12px;
 }
 
 .add-video {
@@ -310,6 +360,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
 }
 
