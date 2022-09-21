@@ -17,7 +17,9 @@ ul {
 img {
     max-width: 100%;
 }
-
+svg{
+    max-width: 100%;
+}
 
 small {
     font-weight: 400;
@@ -25,13 +27,11 @@ small {
 }
 
 .contanier {
-  
     display: grid;
     grid-template-columns: 332px 1fr 320px;
 }
 .contanier-left-side{
     padding: 20px ;
-
 }
 
 .logo p {
@@ -169,7 +169,6 @@ span {
 
 .analytics-event {
     display: flex;
-   
 }
 
 .analytics .analytics-box-group {
@@ -382,8 +381,8 @@ align-items: center;
 }
 
 .profile-imges {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 70px;
 }
 
@@ -395,6 +394,9 @@ align-items: center;
     .right-side {
         display: none;
     }
+    .center-side{
+        overflow: auto;
+    }
 
     .contanier {
         display: flex;
@@ -402,5 +404,32 @@ align-items: center;
 
     img {
         max-width: none;
+    }
+  
+    .count{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+    }
+    .count .count-box{
+        justify-content: space-between;
+
+    }
+    .analytics-event{
+        flex-wrap: wrap;
+    }
+    .analytics{
+        padding: unset;
+    }
+    .event{
+        margin: auto;
+    }
+    .statistcs .target{
+        display: block;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .right-side {
+        display: none;
     }
 }
